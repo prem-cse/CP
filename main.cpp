@@ -3,16 +3,14 @@
 using namespace std;
 
 int main()
-{  int t ;  cin>>t;
-  for(int i=0;i<t;i++)
-  { int L , R, count=0 ;
-      cin>>L>>R;
-      for(int k=L;k<=R;k++)
-        if(k%10==2||k%10==3||k%10==9)
-        count++;
-      cout<<count<<endl;
-
-  }
+{   int a ; int *p ;
+   cout<<"Enter no.  (a) :  ";
+   cin>>a ;
+   p=&a ;
+   cout<<"The address of &a :         "<<&a<<endl;
+   cout<<"The value of pointer  p :   "<<p<<endl;
+   cout<<"The address of pointer &p : "<<&p<<endl;
+   cout<<"Dereferencing pointer *p :  "<<*p<<endl;
 
     return 0;
 }
